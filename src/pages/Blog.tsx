@@ -6,7 +6,6 @@ function Blog() {
     <section className="pt-24 py-20 min-h-screen bg-white">
       <div className="container mx-auto px-4">
         <div className="max-w-4xl mx-auto">
-          <h2 className="text-3xl font-bold mb-12 text-slate-800 text-center">Blogs</h2>
           <div className="space-y-6">
             {blogs.map((blog: BlogPost) => (
               <article key={blog.id} className="bg-slate-50 p-8 rounded-xl shadow-sm hover-scale">
