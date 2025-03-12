@@ -10,7 +10,7 @@ export interface BlogPost {
 
 export async function fetchBlogPosts(): Promise<BlogPost[]> {
   try{
-    const response = await fetch('/medium-feed');
+    const response = await fetch('https://medium.com/feed/@pyrosv');
     const xmlText = await response.text();
     const parser = new DOMParser();
     const xmlDoc = parser.parseFromString(xmlText, 'text/xml');
