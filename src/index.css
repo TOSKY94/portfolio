@@ -70,3 +70,18 @@
 .nav-link.active::after {
   @apply w-full;
 }
+
+/* Global reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Full-page layout */
+html, body, #root, .app-container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  background: #0F172A;
+}
