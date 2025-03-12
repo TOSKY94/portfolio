@@ -26,7 +26,18 @@ function Blog() {
 
   const paginate = (pageNumber: number) => setCurrentPage(pageNumber);
 
-  if (loading) return <div>Loading posts...</div>;
+  if (loading) return (    
+  <section className="pt-24 py-20 min-h-screen bg-white">
+    <div className="container mx-auto px-4">
+      <div className="max-w-4xl mx-auto">
+        <div className="space-y-6">
+          <article className="bg-slate-50 p-8 rounded-xl shadow-sm hover-scale">
+            <div className="flex items-center text-2xl mb-4 text-slate-800">Loading posts...</div>
+            </article>
+        </div>
+      </div>
+    </div>
+  </section>);
 
   return (
     <section className="pt-24 py-20 min-h-screen bg-white">
